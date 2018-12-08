@@ -1,36 +1,44 @@
 .page {
     display: grid;
-    grid-template-rows: 20px 1fr;
-    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: auto 1fr 80px;
     height: 100vh;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 
 .header {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
+    justify-items: stretch;
 }
 
 .main-content{
+    display: grid;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    align-items: stretch;
 }
 
 .left-menu {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    align-items: stretch;
   }
 
   .right-menu {
+    display: grid;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
+    align-items: stretch;
   }
