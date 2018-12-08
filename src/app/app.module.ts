@@ -7,6 +7,8 @@ import { MetamodelModule } from './metamodel/metamodel.module';
 import { AdminModule } from './admin/admin.module';
 import { LoginModule } from './login/login.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MaterialModule } from './material/material.module';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     MetamodelModule,
     AdminModule,
     LoginModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
