@@ -1,0 +1,13 @@
+.left-menu-small {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.left-menu-large {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: stretch;
+    align-items: flex-start;
+}

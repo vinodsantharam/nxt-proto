@@ -1,13 +1,15 @@
+
 <div class="page">
- 
+       
         <div class="header" style="background:white">
-                <span>My Application</span>
+          <button mat-button (click)="leftMenu.toogleMenuSize()"><mat-icon>home</mat-icon></button>
+                
         </div>
   
 
       <div class="left-menu">
-          <mat-card>Left menu</mat-card>
-        </div>
+          <left-menu #leftMenu></left-menu>
+      </div>
       <div class="main-content">
           <mat-card>
           <router-outlet></router-outlet>
@@ -19,3 +21,7 @@
         </mat-card>
         </div>
 </div>
+
+
+
+

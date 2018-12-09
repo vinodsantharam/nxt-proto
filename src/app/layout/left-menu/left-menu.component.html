@@ -1,0 +1,17 @@
+
+<div *ngIf="isExpanded">
+  <mat-card class="left-menu-large"> 
+      <button mat-button>metamodell large</button>
+      <button mat-button>analyse large</button>
+</mat-card>
+
+</div>
+
+<div *ngIf="!isExpanded">
+    <mat-card class="left-menu-small"> 
+        <button mat-button>metamodell</button>
+        <button mat-button>analyse</button>
+  </mat-card>
+  
+  </div>
+

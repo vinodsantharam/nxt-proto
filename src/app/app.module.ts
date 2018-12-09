@@ -8,15 +8,18 @@ import { AdminModule } from './admin/admin.module';
 import { LoginModule } from './login/login.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MaterialModule } from './material/material.module';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { LeftMenuComponent } from './layout/left-menu/left-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LeftMenuComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
     MetamodelModule,
     AdminModule,
