@@ -1,8 +1,20 @@
-.main {
+.page {
 	display: grid;
-	grid-template-rows: auto minmax(auto, 400px);
+	grid-template-rows: auto 1fr;
+	align-items: stretch;
+	height: 100%;
 }
 
-.page {
-	overflow-y: auto;
+.scrollable-child {
+  position:relative;
+  min-height:0px;
+  }
+
+.scrollable-child > div {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  max-height:100%;
+  overflow:auto ;
 }
