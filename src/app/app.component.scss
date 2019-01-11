@@ -20,26 +20,16 @@
 
 .main-content {
 	display: grid;
-	height: calc(100vh - 60px); //header size + 10px margin + 10px margin
+	height: calc(100vh - 60px);
 	overflow: hidden;
-}
-
-.main-content-card {
-	height: inherit;
-	padding: 0 16px;
 }
 
 .left-menu {
 	display: grid;
 	align-items: stretch;
-	// align-content: stretch;
 }
 
 .right-menu {
 	display: grid;
 	align-items: stretch;
 }
-
-// :host {
-// 	height: 100%;
-// }
